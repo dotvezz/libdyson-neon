@@ -158,6 +158,8 @@ class DysonAccount:
             auth=False,
         )
 
+        print(response.content)
+
         jsonRes = response.json()
 
         account_status = jsonRes["accountStatus"]
